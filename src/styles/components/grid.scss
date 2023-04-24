@@ -1,0 +1,41 @@
+.grid {
+    display: grid;
+
+    &__xs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__sm {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__main {
+        min-height: 100vh;
+        grid-template-areas:
+            "canvas canvas eventmenu"
+            "canvas canvas eventmenu"
+            "itmenu itmenu eventmenu";
+
+    }
+
+    &__canvas {
+        grid-area: canvas;
+    }
+
+    &__eventmenu {
+        grid-area: eventmenu;
+    }
+
+    &__itmenu {
+        grid-area: itmenu;
+    }
+
+    &__center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__right {
+        justify-content: right;
+    }
+}

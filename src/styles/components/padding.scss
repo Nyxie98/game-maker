@@ -1,0 +1,23 @@
+.padding {
+    &__sm {
+        padding: 10px;
+        
+        &__top {
+            padding-top: 10px;
+        } 
+
+        &__bottom {
+            padding-bottom: 10px;
+        }
+    }
+
+    &__md {
+        &__top {
+            padding-top: 20px;
+        }
+
+        &__bottom {
+            padding-bottom: 20px;
+        }
+    }
+}

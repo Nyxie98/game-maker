@@ -1,0 +1,28 @@
+.dropdown {
+    &__toggle {
+        cursor: pointer;
+    }
+
+    &__container {
+        background-color: #555;
+        border-bottom: solid 1px #222;
+        padding: 5px 20px;
+    }
+
+    &__list {
+        display: grid;
+        position: relative;
+        border: solid 3px #666;
+        background-color: #666;
+        gap: 3px;
+
+        &__element {
+            padding: 5px 20px;
+            background-color: #888;
+        }
+
+        &__element:hover {
+            background-color: #777;
+        }
+    }
+}
